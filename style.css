@@ -184,3 +184,11 @@ label[for="rememberme"] {
      margin-left: 82px
      
 }
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+
+}
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    
+}
