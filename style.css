@@ -2,12 +2,15 @@
 body {
     justify-content: center;
     align-items: center;
-    
+    margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 .blue-section{
     background-color: #2C73EB;
     margin-top: 0px;
-    height: 100%;
+    height: 100vh;
     width: 50%;
     display: flex;
     align-items: center;
@@ -17,21 +20,25 @@ body {
     
   
 
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
     
 }
 .container{
     display: flex;
     background-color: red;
-    width: 100vw;
     height: 100vh;
+    max-width: 100%;
 
   
 }
+@ media only screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+    
+    }
+  }
+
  .logo { 
     color: white;
     font-weight: bold;
@@ -50,19 +57,20 @@ body {
 .blue-section > .image-container {
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    
+    
     
 }
 
 .image-container > img {
+  margin-top: -15em;
+  height: 50vh;
+  max-height: 50vh;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-   
+  display: flex;
 }
 .white-section {
-    padding: 100px;
+    padding: none;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -90,8 +98,6 @@ button {
  background-color: none;
  margin-top: 30px;
 
- 
-    
 }
 .main h1 {
     font-size: 40px;
@@ -101,7 +107,6 @@ button {
     line-height: 100%;
     font-weight: 700;
     
- 
 }
  input[type="email"] {
     padding-block: 1em;
@@ -129,6 +134,10 @@ button {
         vertical-align: middle;
         letter-spacing: 0;
         color: #8692A6;
+    }
+    .account {
+      color: red;
+      margin-top: 60px;
     }
 h2 {
     margin-top: 20px;
@@ -185,10 +194,5 @@ label[for="rememberme"] {
      
 }
 /* Desktop styles */
-@media only screen and (min-width: 768px) {
-
-}
-/* Mobile styles */
-@media only screen and (max-width: 767px) {
     
 }
